@@ -1,0 +1,131 @@
+<!-- <!DOCTYPE html>
+<html>
+	<head>
+		<title>Home page</title>
+	</head>
+	<body>
+		{{> header}}
+		<p>{{screamIt welcomeMessage}}</p>
+		{{> footer}}
+	</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Home page </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style type="text/css">
+	@media (max-width: 767px) {
+		.table-content-wrap {
+			width: 100% !important;
+		}
+	}
+</style>
+<body style="font-family: 'Open Sans', sans-serif;margin: 0;padding: 0;">
+	{{> header}}
+<div style="background-color:#fff;margin: 0 auto;width: 100%;">
+					<table cellpadding="0" cellspacing="0" border="0" width="100%" style="font-size:13px;">
+						<tr>
+							<td>
+								<table cellpadding="0" cellspacing="0" border="0" class="table-content-wrap" style="margin: 0 auto;max-width: 960px;width: 100%;">
+									<thead style="text-transform:uppercase;font-weight: bold;">
+										<tr>
+											<td style="border-bottom:1px solid #4a4a4a;padding:8px 5px;"> Date & Time </td>
+											<td style="border-bottom:1px solid #4a4a4a;padding:8px 5px;"> Transaction Details </td>
+											<td style="border-bottom:1px solid #4a4a4a;padding:8px 5px;"> Amount </td>
+											<td style="border-bottom:1px solid #4a4a4a;padding:8px 5px;text-align:right;"> Transaction Status </td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td style="border-bottom:1px solid #999999;padding:15px 5px;">
+												26 OCT 2018
+												<span style="color:#A8A9B2;display:block;"> 09:20 AM </span>
+											</td>
+											<td style="border-bottom:1px solid #999999;padding:15px 5px;">
+												<h4 style="margin:0;">Cashback Received </h4>
+												<h4 style="margin:0;font-weight:normal;"> HPCL 30th Nov Order #201920394049103294 </h4>
+												<span style="color:#A8A9B2;display:block;"> Paytm Cash Txn ID #20193840495 </span>
+											</td>
+											<td style="border-bottom:1px solid #999999;padding:15px 5px;font-weight:bold;"> +K10.00 </td>
+											<td style="border-bottom:1px solid #999999;padding:15px 5px;text-align:right;text-transform:uppercase;color:#3EDA8C;"> Success </td>
+										</tr>
+										<!-- 1 block -->
+										<tr>
+											<td style="border-bottom:1px solid #999999;padding:15px 5px;">
+												25 OCT 2018
+												<span style="color:#A8A9B2;display:block;"> 12:20 AM </span>
+											</td>
+											<td style="border-bottom:1px solid #999999;padding:15px 5px;">
+												<h4 style="margin:0;"> Paid For Order </h4>
+												<h4 style="margin:0;font-weight:normal;"> HPCL 25th OCT Order #201920394049103294 </h4>
+												<span style="color:#A8A9B2;display:block;"> Paytm Cash Txn ID #20193840495 </span>
+											</td>
+											<td style="border-bottom:1px solid #999999;padding:15px 5px;font-weight:bold;"> -$100.00 </td>
+											<td style="border-bottom:1px solid #999999;padding:15px 5px;text-align:right;text-transform:uppercase;color:#3EDA8C;"> Success </td>
+										</tr>
+										<!-- 2 block -->
+										<tr>
+											<td style="border-bottom:1px solid #999999;padding:15px 5px;">
+												24 OCT 2018
+												<span style="color:#A8A9B2;display:block;"> 09:20 AM </span>
+											</td>
+											<td style="border-bottom:1px solid #999999;padding:15px 5px;">
+												<h4 style="margin:0;">Cashback Received </h4>
+												<h4 style="margin:0;font-weight:normal;"> HPCL 24th OCT Order #201920394049103294 </h4>
+												<span style="color:#A8A9B2;display:block;"> Paytm Cash Txn ID #20193840495 </span>
+											</td>
+											<td style="border-bottom:1px solid #999999;padding:15px 5px;font-weight:bold;"> +$10.00 </td>
+											<td style="border-bottom:1px solid #999999;padding:15px 5px;text-align:right;text-transform:uppercase;color:#3EDA8C;"> Success </td>
+										</tr>
+										<!-- 3 block -->
+										<tr>
+											<td style="border-bottom:1px solid #999999;padding:15px 5px;">
+												23 OCT 2018
+												<span style="color:#A8A9B2;display:block;"> 09:20 AM </span>
+											</td>
+											<td style="border-bottom:1px solid #999999;padding:15px 5px;">
+												<h4 style="margin:0;">Paid For Order </h4>
+												<h4 style="margin:0;font-weight:normal;"> HPCL 23th OCT Order #201920394049103294 </h4>
+												<span style="color:#A8A9B2;display:block;"> Paytm Cash Txn ID #20193840495 </span>
+											</td>
+											<td style="border-bottom:1px solid #999999;padding:15px 5px;font-weight:bold;"> +$10.00 </td>
+											<td style="border-bottom:1px solid #999999;padding:15px 5px;text-align:right;text-transform:uppercase;color:#3EDA8C;"> Unsuccess </td>
+										</tr>
+										<!-- 4 block -->
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</table> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table cellpadding="0" cellspacing="0" border="0" width="100%" style="padding: 25px 15px;">
+						<tr>
+							<td>
+								<table cellpadding="0" cellspacing="0" border="0" class="table-content-wrap" style="margin: 0 auto;max-width: 960px;width: 100%;">
+									<tbody>
+										<tr>
+											<td>
+												<h5 style="font-size:13px;margin:0;font-weight: normal;">This is system generated transaction history.</h5>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</table> 
+				</td>
+			</tr>
+		</tbody>
+		
+	</table>
+</div>
+	</div>
+	{{> footer}}
+</body>
+</html>
